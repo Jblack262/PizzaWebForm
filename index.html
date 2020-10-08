@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackman - Pizza Form Project</title>
+    <!--pizza favicon-->
+    <link rel="icon" href="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/69015/pizza-icon-clipart-md.png" type="image/gif" sizes="32x32">
+    <!--author and description-->
+    <meta name="author" content="James Blackman">
+    <meta name="description" content="Pizza Form Project">
+    <meta property="og:image" content="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/69015/pizza-icon-clipart-md.png">
+    <meta property="og:description" content="A quick and easy recipe to make delicious hummus!">
+    <meta property="og:title" content="Quick Hummus Recipe">
+
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+    <div class="navBar">
+        <!--Top left items-->
+        <a href="#" class="navBarItems1">Welcome to pizza hub!</a>
+        <a href="#" class="navBarItems1"><span style="color: #e8d279;">(Sign In)</span></a>
+        <!--top right items-->
+        <a href="#" class="navBarItems2">Pizza Hub Rewards!</a>
+        <a href="#" class="navBarItems2"><span style="color: #e8d279;">(Join)</span></a>
+    </div>
+    <hr class="navBarLine">
+
+    <div class="form1">
+        <h1>Pizza builder</h1>
+        <form action="/index.html" class="pizza">
+            <h3 style="text-align: center;">Toppings</h3>
+            <hr class="formLine">
+
+            <!--for blank option-->
+            <div class="blank">
+                <!--pepperoni image-->
+                <input type="checkbox" id="cheeseBox">
+                <label for="checkbox">No Toppings</label><br>
+                <label for="other">+ $0.00</label>
+            </div>
+            <hr class="formLine">
+
+            <!--for pepperoni option-->
+            <div class="pepperoni">
+                <!--pepperoni image-->
+                <img src="images/pepperoni.jpg" class="formImage">
+
+                <input type="checkbox" id="pepperoniBox">
+                <label for="checkbox">Pepperoni</label><br>
+                <label for="other">+ $0.50</label>
+            </div>
+            <hr class="formLine">
+
+            <!--for chicken option-->
+            <div class="chicken">
+                <!--chicken image-->
+                <img src="images/chicken.png" class="formImage">
+
+                <input type="checkbox" id="chickenBox">
+                <label for="checkbox">chicken</label><br>
+                <label for="other">+ $0.75  </label>
+            </div>
+            <hr class="formLine">
+
+            <!--for sausage option-->
+            <div class="chicken">
+                <!--sausage image-->
+                <img src="images/sausage.jpg" class="formImage">
+
+                <input type="checkbox" id="sausageBox">
+                <label for="checkbox">sausage</label><br>
+                <label for="other">+ $0.75  </label>
+            </div>
+        </form>
+
+        <div class="cost">
+            <div class="price">
+                <h3>Total Cost:</h3>
+                <h2 id="price">$ 0.00</h2>
+            </div>
+            <!--submit button-->
+            <a href="#" class="submitButton">Complete Order</a>
+        </div>
+    </div>
+
+    <div class="pizzaBox">
+        <h3>Pizza</h3>
+        <hr class="formLine">
+        <!--cheese pizza-->
+        <img src="images/pizza.png" class="pizzaImg">
+        <!--pepperoni slices-->
+        <img src="images/pepperoniPiece.png" class="pizzaImg" style="bottom: 625px;" id="PepperoniSlices">
+        <!--chicken pieces-->
+        <img src="images/chickenPiece.png" class="pizzaImg" style="bottom: 1250px;" id="ChickenSlices">
+        <!--sausage pieces-->
+        <img src="images/sausage.png" class="pizzaImg" style="bottom: 1875px;" id="SausageSlices">
+    </div>
+    
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

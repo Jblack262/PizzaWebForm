@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+    margin: 0px;
+    padding: 12px;
+    background: black;
+    color: white;
+}
+
+.navBarItems1 {
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    position: relative;
+    left: 10%;
+}
+
+.navBarItems2 {
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    position: relative;
+    left: 55%;
+}
+
+.navBarLine {
+    border: 1px solid red;
+    position: relative;
+    bottom: 10px;
+}
+
+.form1 {
+    text-align: center;
+}
+
+.pizza {
+    margin-left: 55%;
+    width: 40%;
+    border: 2px solid gray;
+    text-align: right;
+}
+
+.formImage {
+ width: 150px;
+    position: relative;
+    top: 50px;
+}
+
+.formLine { 
+    position: relative;
+}
+
+.pepperoni {
+    position: relative;
+    right: 30%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.chicken {
+    position: relative;
+    right: 30%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.blank {
+    text-align: center;
+}
+
+.cost {
+    margin-left: 55%;
+    margin-top: 20px;
+    width: 40%;
+    height: 100px;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.price {
+    position: relative;
+    right: 25%;
+}
+
+.submitButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    font-size: larger;
+    position: relative;
+    bottom: 70px;
+    left: 20%;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.pizzaBox {
+    border: 3px solid gray;
+    text-align: center;
+    margin-left: 5%;
+    width: 40%;
+    border: 2px solid gray;
+    position: relative;
+    bottom: 695px;
+    height: 570px;
+}
+
+.pizzaImg {
+    zoom: .8;
+    position: relative;
+}
+
+#PepperoniSlices {
+    visibility: hidden;
+}
+
+#ChickenSlices {
+    visibility: hidden;
+}
+
+#SausageSlices {
+    visibility: hidden;
+}
