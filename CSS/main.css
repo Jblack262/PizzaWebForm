@@ -37,7 +37,7 @@ body {
     text-align: center;
 }
 
-.pizza {
+#pizza {
     margin-left: 55%;
     width: 40%;
     border: 2px solid gray;
@@ -62,6 +62,13 @@ body {
 }
 
 .chicken {
+    position: relative;
+    right: 30%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.sausage {
     position: relative;
     right: 30%;
     bottom: 35px;
@@ -119,7 +126,8 @@ a {
 
 .pizzaImg {
     zoom: .8;
-    position: relative;
+    position: absolute;
+    right: 18%;
 }
 
 #PepperoniSlices {
@@ -132,4 +140,61 @@ a {
 
 #SausageSlices {
     visibility: hidden;
+}
+
+#toppingsButton {
+    position: relative;
+    right: 100px;
+    margin-left: 0px;
+}
+
+.menu {
+    padding: 16px;
+}
+
+#drinks {
+    margin-left: 54.55%;
+    width: 39.65%;
+    top: 144px;
+    border: 2px solid gray;
+    text-align: right;
+    position: absolute;
+    visibility: hidden;
+}
+
+.drinkImg {
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+
+.water {
+    text-align: center;
+}
+
+.coke {
+    position: relative;
+    right: 40%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.dCoke {
+    position: relative;
+    right: 40%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.sprite {
+    position: relative;
+    right: 40%;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+#extras {
+    width: 300px;
+    height: 50px;
+
 }
