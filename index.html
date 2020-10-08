@@ -20,10 +20,10 @@
     <div class="navBar">
         <!--Top left items-->
         <a href="#" class="navBarItems1">Welcome to pizza hub!</a>
-        <a href="#" class="navBarItems1"><span style="color: #e8d279;">(Sign In)</span></a>
+        <a href="#loginBox" class="navBarItems1"><span style="color: #e8d279;">(Sign In)</span></a>
         <!--top right items-->
         <a href="#" class="navBarItems2">Pizza Hub Rewards!</a>
-        <a href="#" class="navBarItems2"><span style="color: #e8d279;">(Join)</span></a>
+        <a href="#loginBox" class="navBarItems2"><span style="color: #e8d279;">(Join)</span></a>
     </div>
     <hr class="navBarLine">
 
@@ -32,8 +32,8 @@
         <h1>Pizza builder</h1>
         <form action="/index.html" id="pizza">
             <nav class="menu">
-            <a href="#" class="toppingsButton" style="text-align: center; color: black;"><span style="font-size: larger; position: relative; right: 70%;" id="toppingsTab"><strong>Toppings</strong></span></a>
-            <a href="#" class="toppingsButton" style="text-align: center; color: black;"><span style="font-size: larger; position: relative; right: 10%;" id="drinksTab"><strong>Drinks</strong></span></a>
+            <a href="#" class="toppingsButton" style="text-align: center; color: black; text-decoration: underline;"><span style="font-size: larger; position: relative; right: 70%;" id="toppingsTab" onclick="hideDrinksMenu()"><strong>Toppings</strong></span></a>
+            <a href="#" class="toppingsButton" style="text-align: center; color: black; text-decoration: underline;"><span style="font-size: larger; position: relative; right: 10%;" id="drinksTab" onclick="hideToppingsMenu()"><strong>Drinks</strong></span></a>
             </nav>
             <hr class="formLine">
 
@@ -81,8 +81,8 @@
 
         <form action="/index.html" id="drinks">
             <nav class="menu">
-                <a href="#" class="toppingsButton" style="text-align: center; color: black;"><span style="font-size: larger; position: relative; right: 70%;" id="toppingsTab"><strong>Toppings</strong></span></a>
-                <a href="#" class="toppingsButton" style="text-align: center; color: black;"><span style="font-size: larger; position: relative; right: 10%;" id="drinksTab"><strong>Drinks</strong></span></a>
+                <a href="#" class="toppingsButton" style="text-align: center; color: black; text-decoration: underline;"><span style="font-size: larger; position: relative; right: 70%;" id="toppingsTab" onclick="hideDrinksMenu()"><strong>Toppings</strong></span></a>
+                <a href="#" class="toppingsButton" style="text-align: center; color: black; text-decoration: underline;"><span style="font-size: larger; position: relative; right: 10%;" id="drinksTab" onclick="hideToppingsMenu()"><strong>Drinks</strong></span></a>
                 </nav>
                 <hr class="formLine">
 
@@ -131,15 +131,22 @@
         <div class="cost">
             <div class="price">
                 <h3>Total Cost:</h3>
-                <h2 id="price">$ 0.00</h2>
+                <h2 id="price">$ 5.00</h2>
             </div>
             <!--submit button-->
-            <a href="#" class="submitButton">Complete Order</a>
+            <a href="#" class="submitButton" onclick="order()">Complete Order</a>
+        </div>
 
-            <form>
-                <label for="text">Special Instructions:</label>
-                <input type="text" name="specialInstructions" id="extras">
+        <div class="login" id="loginBox">
+            <form class="email">
+                <label for="email">Email: </label>
+                <input type="email">
+                <br>
+                <label for="password">Password: </label>
+                <input type="password">
             </form>
+            <!--submit button-->
+            <a href="#" class="loginButton" onclick="loggedIn()">Login</a>
         </div>
     </div>
 

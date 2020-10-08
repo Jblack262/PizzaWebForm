@@ -88,6 +88,16 @@ body {
     text-align: center;
 }
 
+.login {
+    margin-left: 5%;
+    width: 40%;
+    height: 100px;
+    border: 2px solid gray;
+    text-align: center;
+    position: relative;
+    bottom: 107px;
+}
+
 .price {
     position: relative;
     right: 25%;
@@ -117,17 +127,17 @@ a {
     border: 3px solid gray;
     text-align: center;
     margin-left: 5%;
-    width: 40%;
+    width: 39.6%;
     border: 2px solid gray;
-    position: relative;
-    bottom: 695px;
+    position: absolute;
+    bottom: 40px;
     height: 570px;
 }
 
 .pizzaImg {
     zoom: .8;
     position: absolute;
-    right: 18%;
+    right: 10%;
 }
 
 #PepperoniSlices {
@@ -141,6 +151,7 @@ a {
 #SausageSlices {
     visibility: hidden;
 }
+
 
 #toppingsButton {
     position: relative;
@@ -196,5 +207,26 @@ a {
 #extras {
     width: 300px;
     height: 50px;
+}
 
+.email {
+    text-align: right;
+    margin-right: 50%;
+    margin-top: 25px;
+}
+
+.loginButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 80px;
+    font-size: larger;
+    position: relative;
+    bottom: 32px;
+    left: 20%;
+    text-decoration: none;
+    color: white;
 }
